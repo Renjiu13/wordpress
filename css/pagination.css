@@ -1,0 +1,150 @@
+/*
+ * pagination.css
+ * 作用：分页相关样式，如 .pagination-wrapper、.maupassant-pagination-breadcrumbs、.page-numbers、.main-pagination 等
+ */
+.pagination-wrapper {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.maupassant-pagination-breadcrumbs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start !important;
+    width: 100%;
+    margin: 0;
+    font-size: 13px;
+    color: #aaa;
+    gap: 10px;
+    text-align: left !important;
+    padding: 20px 0;
+    border-top: 1px solid #f0f0f0;
+    position: relative;
+}
+
+.maupassant-pagination-breadcrumbs::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(248, 248, 248, 0.3), rgba(255, 255, 255, 0.8));
+    border-radius: 6px;
+    z-index: -1;
+}
+
+.maupassant-pagination-breadcrumbs .pagination-info {
+    color: #aaa;
+    font-size: 13px;
+    margin-right: 10px;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+.maupassant-pagination-breadcrumbs .total-pages-link {
+    color: #aaa;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.maupassant-pagination-breadcrumbs .total-pages-link:hover {
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    animation: shake 0.5s ease-in-out;
+}
+
+.maupassant-pagination-breadcrumbs .total-pages-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #000;
+    transition: width 0.3s ease;
+}
+
+.maupassant-pagination-breadcrumbs .total-pages-link:hover::after {
+    width: 100%;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    75% { transform: translateX(2px); }
+}
+
+.maupassant-pagination-breadcrumbs .page-numbers {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    background: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.maupassant-pagination-breadcrumbs .page-numbers li {
+    display: inline-block;
+    margin: 0;
+    position: relative;
+}
+
+.maupassant-pagination-breadcrumbs .page-numbers a,
+.maupassant-pagination-breadcrumbs .page-numbers .current {
+    display: inline-block;
+    padding: 2px 7px;
+    text-decoration: none;
+    color: #888;
+    font-weight: 400;
+    border-radius: 3px;
+    margin: 0 1px;
+    min-width: 18px;
+    text-align: center;
+    background: none;
+    border: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.maupassant-pagination-breadcrumbs .page-numbers .current {
+    color: #222;
+    font-weight: 600;
+    background: #f5f5f5;
+    border: 1px solid #eee;
+}
+
+.maupassant-pagination-breadcrumbs .page-numbers a:hover {
+    color: #333;
+    background: #f0f0f0;
+    border: 1px solid #e0e0e0;
+}
+
+.maupassant-pagination-breadcrumbs .page-numbers li:not(:last-child)::after {
+    content: '|';
+    color: #e0e0e0;
+    font-weight: 300;
+    margin: 0 2px;
+    position: relative;
+    top: -1px;
+}
+
+.maupassant-pagination-breadcrumbs .page-numbers .dots::after,
+.maupassant-pagination-breadcrumbs .page-numbers li.dots + li::after {
+    content: '';
+    margin: 0;
+}
+
+.res-cons .pagination-wrapper {
+    margin-top: auto;
+    margin-bottom: 40px;
+} 

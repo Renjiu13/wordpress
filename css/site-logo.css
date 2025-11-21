@@ -1,0 +1,62 @@
+/*
+ * site-logo.css
+ * 作用：博客名称和logo相关样式，包括 .site-name、#logo、.description 等
+ */
+
+/* 站点名称容器 */
+.site-name {
+    /* 保持原有样式，如果需要可以在这里添加额外样式 */
+}
+
+/* 站点名称标题 */
+.site-name h1 {
+    padding: 0;
+    margin: 0;
+}
+
+/* 博客logo链接样式 */
+#logo {
+    font: bold 32px/1.1 "Times New Roman", Georgia, Times, sans-serif !important;
+    color: #555 !important;
+    text-decoration: none !important;
+    transition: color 0.3s ease;
+}
+
+/* logo中的span元素样式 */
+#logo span {
+    color: #777;
+}
+
+/* logo悬停效果 */
+#logo:hover {
+    color: #777 !important;
+}
+
+/* 博客描述文字样式 */
+.description {
+    margin: 3px 0 0 !important;
+    color: #999 !important;
+    font-size: 13px !important;
+    line-height: 1.3 !important;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    #logo {
+        font-size: 28px !important;
+    }
+    
+    .description {
+        font-size: 12px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #logo {
+        font-size: 24px !important;
+    }
+    
+    .description {
+        font-size: 11px !important;
+    }
+} 

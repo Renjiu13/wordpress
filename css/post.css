@@ -1,0 +1,177 @@
+/*
+ * post.css
+ * 作用：文章内容相关样式，如 .post、.post-title、.post-meta、.post-content、.page-content、.sticky、.archive-title、.more、.protected、.post-content-pages、.icon-about、.al_year、.al_mon_list 等
+ */
+.post {
+    padding: 25px 0;
+}
+
+.sticky-post .post-title {
+    margin-left: 30px;
+}
+
+.sticky {
+    background: url('fonts/071-pushpin.svg') no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    opacity: 0.6;
+    margin-top: 5px;
+}
+
+.post-title {
+    margin: 0;
+    color: #555;
+    text-align: left;
+    font: bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif;
+}
+
+.post-title a {
+    color: #555;
+}
+
+.post-meta {
+    padding: 0;
+    margin: 9px 0 0;
+    color: #999;
+    text-align: left;
+    display: block;
+    list-style-type: none;
+}
+
+.post-meta li {
+    display: inline-block;
+}
+
+.post-meta li:first-child {
+    padding-right: 5px;
+}
+
+.comment-count {
+    float: right;
+}
+
+.post-content {
+    font-size: 15px;
+    line-height: 1.715;
+    color: #444;
+    padding-top: 27px;
+    overflow: hidden;
+}
+
+.page-content {
+    padding-top: 40px;
+}
+
+.post-content h3,
+.post-content h2 {
+    margin: 1.4em 0 1.1em;
+}
+
+.post-content pre,
+.comment-content pre {
+    max-height: 320px;
+}
+
+.post-content pre code,
+.comment-content pre code {
+    padding: .5em 1em;
+    display: block;
+}
+
+.post-content p code,
+.comment-content p code {
+    display: inline;
+    margin: 0 5px;
+    padding: 3px 5px;
+}
+
+.post-content p {
+    margin: 0 0 1em 0;
+}
+
+.post-content img {
+    padding: 1em 0;
+    height: auto;
+}
+
+.post-content ul,
+.post-content ol {
+    overflow: auto;
+    padding: 0 0 1em 2.4em;
+    border-radius: 3px;
+    margin: 0;
+}
+
+.post-content ul li,
+.post-content ol li {
+    text-indent: .5em;
+}
+
+.post-password-form input[type=submit] {
+    display: block;
+    margin-top: 2px;
+    padding: 0 9px;
+    cursor: pointer;
+    min-width: 64px;
+    height: 30px;
+    line-height: 25px;
+    outline: none;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.archive-title {
+    padding-top: 20px;
+    color: #999;
+    font-size: 1em;
+}
+
+.more {
+    padding: 10px 0 0;
+}
+
+.more a {
+    border: none;
+}
+
+.protected .text {
+    width: 50%;
+}
+
+.post-content-pages {
+    font-size: 17px;
+}
+
+.icon-about {
+    padding: 10px 0 25px;
+}
+
+.icon-about a {
+    font-size: 20px;
+    margin: 5px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 100%;
+    padding: 6px;
+}
+
+.al_year {
+    width: 60px;
+    padding: 10px 0;
+}
+
+.al_mon_list {
+    margin-left: 90px;
+    margin-top: -2.2em;
+    border-left: 1px solid #ddd;
+}
+
+.al_mon_list li {
+    list-style: none;
+    line-height: 1.8;
+}
+
+.al_mon_list li a {
+    margin-left: 1.5em;
+} 

@@ -1,0 +1,47 @@
+/*
+ * layout.css
+ * 作用：布局相关样式，如 container、col-8、col-12、#main、#secondary、.res-cons、.main-content 等
+ */
+.col-8 {
+    width: 800px;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.container {
+    width: 1150px;
+    padding: 0 60px;
+    margin: 0 auto;
+}
+
+#secondary {
+    float: right;
+    width: 245px;
+    border-left: 1px solid #ddd;
+    padding-left: 35px;
+    word-wrap: break-word;
+    display: block;
+    padding-top: 40px;
+}
+
+#main {
+    padding-top: 20px;
+    float: left;
+}
+
+.res-cons {
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1 0 auto;
+}
+
+.main-pagination {
+    margin-top: auto;
+} 

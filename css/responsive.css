@@ -1,0 +1,173 @@
+/*
+ * responsive.css
+ * 作用：所有 @media 查询相关的响应式样式
+ */
+@media (max-width: 1290px) {
+    .container {
+        width: auto;
+    }
+    #main {
+        width: 100%;
+        margin-right: -320px;
+        float: left;
+    }
+    .res-cons {
+        width: auto;
+        margin-right: 320px;
+    }
+    .post-content img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1057px) {
+    .container {
+        width: auto;
+    }
+    #main {
+        width: 100%;
+        margin-right: -260px;
+        float: left;
+    }
+    .res-cons {
+        width: auto;
+        margin-right: 260px;
+    }
+    #secondary {
+        width: 175px;
+        margin-top: 35px;
+        padding-top: 5px;
+    }
+    .post-content {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 860px) {
+    #header {
+        text-align: center;
+    }
+    #main {
+        width: 100%;
+        margin-right: 0;
+    }
+    #nav-menu {
+        margin: 35px 0 -1px;
+    }
+    .res-cons {
+        width: auto;
+        margin-right: 0;
+    }
+    #secondary {
+        display: none;
+    }
+    #comment-form .comment-form-author,
+    #comment-form .comment-form-email {
+        width: 100%;
+        float: none;
+    }
+    #comment-form .comment-form-email {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 680px) {
+    .pagination-wrapper {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        min-height: 60px;
+    }
+    .maupassant-pagination-breadcrumbs {
+        font-size: 12px;
+        gap: 6px;
+        padding: 15px 0;
+    }
+    .maupassant-pagination-breadcrumbs .pagination-info {
+        font-size: 12px;
+        margin-right: 6px;
+    }
+    .maupassant-pagination-breadcrumbs .total-pages-link {
+        font-size: 12px;
+    }
+    .maupassant-pagination-breadcrumbs .total-pages-link:hover {
+        font-size: 14px;
+    }
+    .maupassant-pagination-breadcrumbs .page-numbers {
+        font-size: 12px;
+    }
+    .maupassant-pagination-breadcrumbs .page-numbers a,
+    .maupassant-pagination-breadcrumbs .page-numbers .current {
+        padding: 2px 5px;
+        margin: 0 0.5px;
+    }
+    .maupassant-pagination-breadcrumbs .page-numbers li:not(:last-child)::after {
+        margin: 0 1px;
+    }
+    .res-cons {
+        min-height: 300px;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .post-title {
+        font-size: 22px;
+    }
+    .page-navigator {
+        padding: 15px 0 0;
+    }
+    #footer {
+        padding-top: 10px;
+    }
+    .page-navigator a {
+        padding: 0 6px;
+    }
+    .post-content img {
+        padding: 0.2em 0;
+    }
+    .post {
+        padding: 12px 0;
+    }
+    #nav-menu a {
+        padding: 0 15px;
+        line-height: 27px;
+        height: 27px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 500px) {
+    .col2 {
+        width: 140px;
+    }
+    .post-meta li.comment-count {
+        display: none;
+    }
+    .col1 p {
+        margin-right: 160px;
+    }
+    .col1 {
+        margin-right: -160px;
+    }
+    .post-content-pages {
+        font-size: 14px;
+    }
+    .al_mon_list {
+        margin-left: 70px;
+        padding-left: 20px;
+    }
+}
+
+@media print {
+    #comment-form {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 65% !important;
+  }
+  body {
+    zoom: 0.65;
+  }
+} 

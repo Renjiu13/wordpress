@@ -1,0 +1,46 @@
+/*
+ * footer-fix.css
+ * 解决页脚（footer）无法自动吸底的问题，实现内容少时页脚吸附底部，内容多时正常跟随内容下方。
+ * 使用 Flexbox 实现自适应吸底页脚。
+ */
+
+/* 1. 让 html 和 body 高度始终为 100%，去除默认外边距和内边距 */
+html, body {
+    height: 100%; /* 保证页面高度撑满视口 */
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. 让 body 变为纵向 Flex 布局，最小高度为视口高度 */
+body {
+    min-height: 100vh; /* 最小高度为视口高度，内容少时也能撑满 */
+    display: flex;
+    flex-direction: column; /* 垂直排列 */
+}
+
+/* 3. 让页脚自动推到页面底部 */
+.site-footer {
+    margin-top: auto; /* 自动占据剩余空间，将 footer 推到底部 */
+}
+
+/*
+ * 页脚（.site-footer）样式控制区域
+ * 如需调整页脚字体大小、颜色、背景等，可在此处修改
+ */
+.site-footer {
+    /* font-size: 1em;        // 字体大小，默认1em，可自定义 */
+    /* color: #333;           // 字体颜色，默认继承，可自定义 */
+    /* background: #fff;      // 背景色，默认继承，可自定义 */
+    /* padding: 16px 0;       // 上下内边距，可自定义 */
+    /* text-align: center;    // 居中显示，可自定义 */
+}
+
+/* 覆盖 blockquote 首字变大效果，恢复正常字体 */
+blockquote:first-letter {
+    font-size: 1em !important; /* 恢复为正常字体大小 */
+    font-weight: normal !important; /* 取消加粗 */
+    float: none !important; /* 取消左浮动 */
+    padding: 0 !important; /* 取消额外内边距 */
+    color: inherit !important; /* 继承父元素颜色 */
+    line-height: normal !important; /* 恢复正常行高 */
+} 

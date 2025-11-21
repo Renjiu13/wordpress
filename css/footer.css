@@ -1,0 +1,13 @@
+/*
+ * footer.css
+ * 作用：底部相关样式（#footer 相关）
+ */
+#footer {
+    padding: .8em 0;
+    line-height: 1.5;
+    color: #999;
+}
+
+#footer {
+    padding-top: 10px;
+} 

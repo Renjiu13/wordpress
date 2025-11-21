@@ -1,0 +1,80 @@
+/*
+ * header.css
+ * 作用：头部相关样式，如 #header、#logo、#nav-menu、.site-name、.description、.site-search、#search 等
+ */
+#header {
+    padding: 58px 0 0;
+    text-align: left;
+}
+
+#header .col-group {
+    border-bottom: 1px solid #ddd;
+}
+
+/* 站点名称相关样式已移至 site-logo.css */
+
+#nav-menu {
+    margin: 10px 0 -1px;
+    padding: 0;
+    float: right;
+}
+
+#nav-menu ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-menu li {
+    display: inline-block;
+    margin-right: -1px;
+}
+
+#nav-menu a {
+    display: inline-block;
+    margin-right: -1px;
+    padding: 0 20px;
+    height: 32px;
+    line-height: 32px;
+    color: #444;
+}
+
+#nav-menu a:first-child {
+    border: none;
+}
+
+#nav-menu .current-post-parent a,
+#nav-menu .current-menu-item a {
+    border: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+}
+
+.site-search {
+    display: none;
+}
+
+#search {
+    position: relative;
+    overflow: hidden;
+}
+
+#search input {
+    padding: 10px 30px 8px 15px;
+    line-height: 1.5;
+}
+
+#search button {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    font-size: 20px;
+    line-height: 1.5;
+    border: none;
+    padding: 11px 0;
+    width: 20px;
+    height: 48px;
+    color: #444;
+    background: url('fonts/135-search.svg') no-repeat;
+    opacity: 0.6;
+    cursor: pointer;
+} 
