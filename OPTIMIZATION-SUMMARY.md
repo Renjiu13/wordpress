@@ -72,7 +72,7 @@
 
 ---
 
-## 📁 新增文件
+## 📁 新增/优化文件
 
 ### PHP 模块（inc/ 目录）
 1. `performance-optimizations.php` - 性能优化
@@ -84,9 +84,16 @@
 ### JavaScript
 1. `js/comment-enhancements.js` - 评论前端功能
 
+### 优化的核心文件
+1. `README.md` - 全新的专业文档
+2. `404.php` - 增强的 404 页面
+3. `css/404.css` - 现代化的 404 样式
+
 ### 文档
 1. `OPTIMIZATIONS.md` - 详细优化文档
 2. `OPTIMIZATION-SUMMARY.md` - 本文件
+3. `DEPLOYMENT-CHECKLIST.md` - 部署检查清单
+4. `CHANGES.txt` - 变更记录
 
 ---
 
